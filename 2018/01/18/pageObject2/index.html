@@ -112,7 +112,7 @@
             <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = "/static/api/js/share.js"];</script>
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2018/01/17</span>
+                <span class="post-intro-time">2018/01/18</span>
                 <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                     <span class="iconfont-archer">&#xe604;</span>
                     <span id="busuanzi_value_page_pv"></span>
@@ -195,12 +195,12 @@
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="一、工厂模式"><a href="#一、工厂模式" class="headerlink" title="一、工厂模式"></a>一、工厂模式</h3><p><img src="https://app.yinxiang.com/shard/s4/res/0f93f159-970b-4b0c-a23b-29c9120f92cc" alt=""></p>
+        <h3 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h3><p><img src="https://app.yinxiang.com/shard/s4/res/0f93f159-970b-4b0c-a23b-29c9120f92cc" alt=""></p>
 <ul>
 <li>优点：可以无限次调用这个函数创建多个相似对象</li>
 <li>缺点：没有解决对象识别问题</li>
 </ul>
-<h3 id="二、构造函数模式"><a href="#二、构造函数模式" class="headerlink" title="二、构造函数模式"></a>二、构造函数模式</h3><p><img src="https://app.yinxiang.com/shard/s4/res/1cdd2026-206a-40fa-bde7-6ee033351039" alt=""></p>
+<h3 id="构造函数模式"><a href="#构造函数模式" class="headerlink" title="构造函数模式"></a>构造函数模式</h3><p><img src="https://app.yinxiang.com/shard/s4/res/1cdd2026-206a-40fa-bde7-6ee033351039" alt=""></p>
 <p>要创建新的 Person 实例，必须使用 new 操作符。以这种方式调用构造函数会经历以下 4 个步骤：</p>
 <ul>
 <li>创建一个新的对象</li>
@@ -219,7 +219,7 @@
 <li>新缺陷1：如果该构造函数中包含很多方法，则需要定义相应数量的全局函数，且只为某个对象使用；</li>
 <li>新缺陷2：全局函数的大量使用，使得该引用类型毫无封装性可言；</li>
 </ul>
-<h3 id="三、原型模式"><a href="#三、原型模式" class="headerlink" title="三、原型模式"></a>三、原型模式</h3><blockquote>
+<h3 id="原型模式"><a href="#原型模式" class="headerlink" title="原型模式"></a>原型模式</h3><blockquote>
 <p>我们创建的一个构造函数，就会创建一个prototype属性指向该函数的原型对象（包含该构造函数所有实例的共享方法和属性）；</p>
 </blockquote>
 <p><img src="https://app.yinxiang.com/shard/s4/res/3c13e901-7cfd-4085-bf1a-120fc76910d6" alt=""></p>
@@ -263,7 +263,7 @@
 <li>优点：不必在构造函数中定义属性和方法，可以通过构造函数直接在原型中定义所有实例共享该原型的属性和方法。</li>
 <li>缺陷：如果原型中的属性时引用类型时，当修改某个实例的该属性引用，由于原型模式的共享性，会导致所有实例该属性引用均产生变化。</li>
 </ul>
-<h3 id="四、组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）"><a href="#四、组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）" class="headerlink" title="四、组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）"></a>四、组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）</h3><blockquote>
+<h3 id="组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）"><a href="#组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）" class="headerlink" title="组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）"></a>组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）</h3><blockquote>
 <ul>
 <li>构造函数模式用于定义实例属性</li>
 <li>原型模式用于定义方法和共享属性</li>
@@ -273,16 +273,16 @@
 <ul>
 <li>优点：每个实例都会有自己的一份实例属性的副本，但同时又共享着对方法的引用，最大程度地节省了内存。同时混合模式还支持向构造函数传递参数。</li>
 </ul>
-<h3 id="五、动态原型模式（在构造函数中初始化原型）"><a href="#五、动态原型模式（在构造函数中初始化原型）" class="headerlink" title="五、动态原型模式（在构造函数中初始化原型）"></a>五、动态原型模式（在构造函数中初始化原型）</h3><p><img src="https://app.yinxiang.com/shard/s4/res/1caf39b7-e110-4872-9cda-9bfd0703d071" alt=""></p>
+<h3 id="动态原型模式（在构造函数中初始化原型）"><a href="#动态原型模式（在构造函数中初始化原型）" class="headerlink" title="动态原型模式（在构造函数中初始化原型）"></a>动态原型模式（在构造函数中初始化原型）</h3><p><img src="https://app.yinxiang.com/shard/s4/res/1caf39b7-e110-4872-9cda-9bfd0703d071" alt=""></p>
 <ul>
 <li>优点：封装性</li>
 </ul>
-<h3 id="六、寄生构造函数模式"><a href="#六、寄生构造函数模式" class="headerlink" title="六、寄生构造函数模式"></a>六、寄生构造函数模式</h3><p><img src="https://app.yinxiang.com/shard/s4/res/57637fd0-2dc3-4127-9d41-56e6b0514f05" alt=""></p>
+<h3 id="寄生构造函数模式"><a href="#寄生构造函数模式" class="headerlink" title="寄生构造函数模式"></a>寄生构造函数模式</h3><p><img src="https://app.yinxiang.com/shard/s4/res/57637fd0-2dc3-4127-9d41-56e6b0514f05" alt=""></p>
 <ul>
 <li>不能算作优点的优点：由于不能直接修改原生构造函数，我们可以使用寄生构造函数创建一个具有额外方法的特殊引用类型。</li>
 <li>缺陷：构造函数返回的对象与原型和构造函数都没有联系，不能用 instanceof 来确定对象类型。</li>
 </ul>
-<h3 id="七、稳妥构造函数模式（遵循寄生构造函数模式，不用-this-和-new）"><a href="#七、稳妥构造函数模式（遵循寄生构造函数模式，不用-this-和-new）" class="headerlink" title="七、稳妥构造函数模式（遵循寄生构造函数模式，不用 this 和 new）"></a>七、稳妥构造函数模式（遵循寄生构造函数模式，不用 this 和 new）</h3><blockquote>
+<h3 id="稳妥构造函数模式（遵循寄生构造函数模式，不用-this-和-new）"><a href="#稳妥构造函数模式（遵循寄生构造函数模式，不用-this-和-new）" class="headerlink" title="稳妥构造函数模式（遵循寄生构造函数模式，不用 this 和 new）"></a>稳妥构造函数模式（遵循寄生构造函数模式，不用 this 和 new）</h3><blockquote>
 <p>稳妥对象(durable object)：没有公共属性的对象。适用于禁止使用 this 和 new 的环境。</p>
 </blockquote>
 <p><img src="https://app.yinxiang.com/shard/s4/res/f4450f96-46e7-476f-88ed-10213860a152" alt=""></p>
@@ -297,13 +297,13 @@
     <!-- 前后页  -->
     <ul class="post-pager">
         
-        
-            <li class="previous">
-                <a href= "/2018/01/17/Object/" title= 对象 Object >
-                    <span>Previous Post</span>
+            <li class="next">
+                <a href= "/2018/01/18/Object/" title= 对象 Object >
+                    <span>Next Post</span>
                     <span>对象 Object</span>
                 </a>
             </li>
+        
         
     </ul>
     <!-- 评论插件 -->
@@ -363,7 +363,7 @@
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、工厂模式"><span class="toc-number">1.</span> <span class="toc-text">一、工厂模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、构造函数模式"><span class="toc-number">2.</span> <span class="toc-text">二、构造函数模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、原型模式"><span class="toc-number">3.</span> <span class="toc-text">三、原型模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#检测属性是否存在于实例中或者原型中的方法"><span class="toc-number">3.1.</span> <span class="toc-text">检测属性是否存在于实例中或者原型中的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#for-in-循环"><span class="toc-number">3.1.1.</span> <span class="toc-text">for-in 循环</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原型模式简化"><span class="toc-number">3.2.</span> <span class="toc-text">原型模式简化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原生对象的原型"><span class="toc-number">3.3.</span> <span class="toc-text">原生对象的原型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原型对象的优点和缺点"><span class="toc-number">3.4.</span> <span class="toc-text">原型对象的优点和缺点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）"><span class="toc-number">4.</span> <span class="toc-text">四、组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、动态原型模式（在构造函数中初始化原型）"><span class="toc-number">5.</span> <span class="toc-text">五、动态原型模式（在构造函数中初始化原型）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、寄生构造函数模式"><span class="toc-number">6.</span> <span class="toc-text">六、寄生构造函数模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#七、稳妥构造函数模式（遵循寄生构造函数模式，不用-this-和-new）"><span class="toc-number">7.</span> <span class="toc-text">七、稳妥构造函数模式（遵循寄生构造函数模式，不用 this 和 new）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">8.</span> <span class="toc-text">总结</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#工厂模式"><span class="toc-number">1.</span> <span class="toc-text">工厂模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#构造函数模式"><span class="toc-number">2.</span> <span class="toc-text">构造函数模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原型模式"><span class="toc-number">3.</span> <span class="toc-text">原型模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#检测属性是否存在于实例中或者原型中的方法"><span class="toc-number">3.1.</span> <span class="toc-text">检测属性是否存在于实例中或者原型中的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#for-in-循环"><span class="toc-number">3.1.1.</span> <span class="toc-text">for-in 循环</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原型模式简化"><span class="toc-number">3.2.</span> <span class="toc-text">原型模式简化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原生对象的原型"><span class="toc-number">3.3.</span> <span class="toc-text">原生对象的原型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#原型对象的优点和缺点"><span class="toc-number">3.4.</span> <span class="toc-text">原型对象的优点和缺点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）"><span class="toc-number">4.</span> <span class="toc-text">组合使用构造函数模式和原型模式（最常用，定义引用类型的默认模式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#动态原型模式（在构造函数中初始化原型）"><span class="toc-number">5.</span> <span class="toc-text">动态原型模式（在构造函数中初始化原型）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#寄生构造函数模式"><span class="toc-number">6.</span> <span class="toc-text">寄生构造函数模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#稳妥构造函数模式（遵循寄生构造函数模式，不用-this-和-new）"><span class="toc-number">7.</span> <span class="toc-text">稳妥构造函数模式（遵循寄生构造函数模式，不用 this 和 new）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">8.</span> <span class="toc-text">总结</span></a></li></ol>
     </div>
     
     <div class="back-top">&#xe639;</div>
@@ -407,12 +407,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">01/17</span><a class="archive-post-title" href= "/2018/01/17/pageObject2/" >创建对象</a>
+            <span class="archive-post-date">01/18</span><a class="archive-post-title" href= "/2018/01/18/Object/" >对象 Object</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">01/17</span><a class="archive-post-title" href= "/2018/01/17/Object/" >对象 Object</a>
+            <span class="archive-post-date">01/18</span><a class="archive-post-title" href= "/2018/01/18/pageObject2/" >创建对象</a>
         </li>
     
     </div>

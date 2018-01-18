@@ -112,7 +112,7 @@
             <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = "/static/api/js/share.js"];</script>
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2018/01/17</span>
+                <span class="post-intro-time">2018/01/18</span>
                 <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                     <span class="iconfont-archer">&#xe604;</span>
                     <span id="busuanzi_value_page_pv"></span>
@@ -205,37 +205,37 @@
 <blockquote>
 <p>Object.defineProperty(); //ECMAScript5方法<br>//接收三个参数，所在对象、属性名、和描述符对象<br>//描述符对象属性必须是：configurable, writable, enumberable, value 中的一个或者多个</p>
 </blockquote>
-<p><img src="https://app.yinxiang.com/shard/s4/res/cd362c8c-886f-4b38-8821-16ee313ea509" alt=""></p>
+<p><img src="/img/obj-1.png" alt=""></p>
 <p>注意：调用 Object.defineProperty() 方法创建属性时，如不指定，configurable，writable，enumberable 默认值为 false。</p>
 <h3 id="访问器属性"><a href="#访问器属性" class="headerlink" title="访问器属性"></a>访问器属性</h3><p>访问器属性的 4 个默认特性：</p>
 <blockquote>
 <p>[[Configurable]]<br>[[Enumberable]]<br>[[Get]] //读取属性时调用的函数<br>[[Set]] //写入属性时调用的函数</p>
 </blockquote>
 <p>访问器属性不能直接定义，必须使用 Object.defineProperty()。通常我们可以通过设置一个属性来访问访问器属性，即修改访问器属性的值。</p>
-<p><img src="https://app.yinxiang.com/shard/s4/res/a60a7a2c-4a2f-48f7-942e-6c8a47f80143" alt=""></p>
+<p><img src="/img/obj-2.png" alt=""></p>
 <p>由于 js 没有原生的 private 属性，所以大家约定俗成用 “_”，开始的变量定义私有变量。然后通过封装 getter 和 setter 来访问这个变量。</p>
 <p>在ECMAScript5之前，我们一般使用如下方法：</p>
-<p><img src="https://app.yinxiang.com/shard/s4/res/9ac408e6-2efb-4165-bc0e-cf70e4a0472d" alt=""></p>
+<p><img src="/img/obj-6.png" alt=""></p>
 <p>注意：在不支持 Object.defineProperty() 方法的浏览器中，不能修改 [[Configurable]]，和 [[Enumberable]] 特性。</p>
 <h3 id="定义多个属性"><a href="#定义多个属性" class="headerlink" title="定义多个属性"></a>定义多个属性</h3><p>ECMAScript5 通过 Object.defineProperties() 方法可以定义多个属性;</p>
-<p><img src="https://app.yinxiang.com/shard/s4/res/3c4130b5-9c0f-49f8-8fa8-c79e22c3e42a" alt=""></p>
+<p><img src="/img/obj-3.png" alt=""></p>
 <p>上图中 writable 一定要置 true，否则默认不可写。</p>
 <h3 id="读取属性的特性"><a href="#读取属性的特性" class="headerlink" title="读取属性的特性"></a>读取属性的特性</h3><p>ECMAScript5 中 getOwnPropertyDescriptor() 方法可以用来读取属性的特性值，即给定属性的描述符。</p>
-<p><img src="https://app.yinxiang.com/shard/s4/res/b730d569-698d-4f6a-baec-cc5d703cd272" alt=""></p>
-<p><img src="https://app.yinxiang.com/shard/s4/res/8ba6a5e2-6683-4f15-a801-b008e2191bfd" alt=""></p>
+<p><img src="/img/obj-4.png" alt=""></p>
+<p><img src="/img/obj-5.png" alt=""></p>
 <p><em>注意：alert() 方法用于显示带有一条指定消息和一个 OK 按钮的警告框。</em></p>
 
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
         
-            <li class="next">
-                <a href= "/2018/01/17/pageObject2/" title= 创建对象 >
-                    <span>Next Post</span>
+        
+            <li class="previous">
+                <a href= "/2018/01/18/pageObject2/" title= 创建对象 >
+                    <span>Previous Post</span>
                     <span>创建对象</span>
                 </a>
             </li>
-        
         
     </ul>
     <!-- 评论插件 -->
@@ -339,12 +339,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">01/17</span><a class="archive-post-title" href= "/2018/01/17/pageObject2/" >创建对象</a>
+            <span class="archive-post-date">01/18</span><a class="archive-post-title" href= "/2018/01/18/Object/" >对象 Object</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">01/17</span><a class="archive-post-title" href= "/2018/01/17/Object/" >对象 Object</a>
+            <span class="archive-post-date">01/18</span><a class="archive-post-title" href= "/2018/01/18/pageObject2/" >创建对象</a>
         </li>
     
     </div>
